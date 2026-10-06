@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>REgistration form</title>
+    </head>
+ <body>
+     <h1>Event Registration Form</h1>  
+      <form onsubmit="showSuccess(); return false;">
+        <label >Name:</label>
+        <input type="text" name="name" required>
+        <br>
+        <label >Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label >Gender:</label>
+        <input type="radio" name="gender" value="Male">
+        <label >Male</label>
+        <br>
+        <input type="radio" name="gender" value="Female">
+        <label >Female</label>
+        <br>
+        <select name="event">
+            <option >WD</option>
+            <option >SD</option>
+        </select>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </form>
+      <script>
+        function showSuccess(){
+            alert("REgistration successful");
+        }
+      </script>
+</body>
+</html>
